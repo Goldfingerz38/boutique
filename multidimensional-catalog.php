@@ -1,3 +1,6 @@
+
+<?php include("my-functions.php");?>
+
 <?php
 $products = [
     "iPhone" => [

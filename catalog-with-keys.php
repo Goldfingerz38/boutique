@@ -1,3 +1,6 @@
+
+<?php include("my-functions.php");?>
+
 <?php
 $iphone = ["name" => "iPhone", "price"=> 45000, "weight" => 200, "discount" =>10, "picture" => "<img src= \"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1631220221000\">"];
 echo implode("<br>", $iphone);
