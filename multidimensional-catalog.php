@@ -32,10 +32,27 @@ $products = [
 
     foreach($products as $values => $details ){
         echo $values .' - ' . $details .'<br>';
-    
+    }
 
     foreach($details as $detail){
         echo $detail .'<br>';
     }
-    }
+
+    $prixHT = priceExcludingVAT($iphone["price"]);
+    formatPrice($prixHT);
+
+    $prixHT = priceExcludingVAT($ipad["price"]);
+    formatPrice($prixHT);
+
+    $prixHT = priceExcludingVAT($imac["price"]);
+    formatPrice($prixHT);
+
+
+    $discounted_price = displayDiscountedPrice($iphone["discount"], $discount);
+
+    $discounted_price = displayDiscountedPrice($ipad["discount"], $discount);
+
+   $discounted_price = displayDiscountedPrice($iMac["discount"], $discount);
+
+
     ?>

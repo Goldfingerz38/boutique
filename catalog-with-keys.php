@@ -9,6 +9,8 @@
 <body>
 <?php include("my-functions.php");?>
 
+
+
 <?php
 $iphone = [
     "name" =>"iPhone",
@@ -36,6 +38,25 @@ $iMac = [
 
 echo "<h1> ${iphone["name"]} </h1>";
 echo "<h2> ${iphone["price"]} </h2>";
+
+
+$prixHT = priceExcludingVAT($iphone["price"]);
+formatPrice($prixHT);
+
+$prixHT = priceExcludingVAT($ipad["price"]);
+formatPrice($prixHT);
+
+$prixHT = priceExcludingVAT($imac["price"]);
+formatPrice($prixHT);
+
+
+$discounted_price = displayDiscountedPrice($iphone["discount"], $discount);
+
+$discounted_price = displayDiscountedPrice($ipad["discount"], $discount);
+
+$discounted_price = displayDiscountedPrice($iMac["discount"], $discount);
+
+
 ?>
   
 </body>
